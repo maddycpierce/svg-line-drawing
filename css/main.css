@@ -1,0 +1,40 @@
+#narwhal-body {
+  animation: offset 1s linear forwards;
+  stroke-dasharray: 1908.791px;
+  stroke-dashoffset: 1908.791px;
+}
+
+#narwhal-eye {
+  animation: appear 1s linear forwards 1s;
+  stroke-dasharray: 72.624px;
+  stroke-dashoffset: 1908.791px;
+  opacity: 0;
+}
+
+#rainbow-violet,
+#rainbow-indigo,
+#rainbow-blue,
+#rainbow-green,
+#rainbow-yellow,
+#rainbow-orange,
+#rainbow-red {
+  animation: offset 1s linear forwards 700ms;
+  stroke-dasharray: 1908.791px;
+  stroke-dashoffset: 1908.791px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes offset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
